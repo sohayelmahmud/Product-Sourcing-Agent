@@ -13,6 +13,9 @@ const certifications = [
     icon: FileCheck,
     title: "Export Import Mastery Certification",
     description: "Comprehensive training in international trade regulations and export-import procedures",
+    issuer: "Perpetual Academy",
+    date: "January 2025",
+    certificateUrl: "https://perpetualacademy.com/certificates/export-import-mastery",
   },
 ];
 
@@ -21,7 +24,7 @@ export const CertificationsSection = () => {
     <section id="certifications" className="section-padding bg-muted/50">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-accnent font-medium text-sm tracking-wider uppercase mb-4 block">
             Credentials
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
