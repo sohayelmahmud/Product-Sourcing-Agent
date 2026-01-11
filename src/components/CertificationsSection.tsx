@@ -7,7 +7,7 @@ const certifications = [
     description: "Completed training from Area71 Academy covering procurement, supply chain management, and product sourcing best practices.",
     issuer: "Area71 Academy",
     date: "May 2025",
-    certificateUrl: "/certificates/procurement-certificate.pdf",
+    certificateUrl: "https://drive.google.com/file/d/1SEosCN_8D3kneH3gith4VEx3l7l81vlC/view?usp=sharing",
   },
   {
     icon: FileCheck,
@@ -15,7 +15,7 @@ const certifications = [
     description: "Comprehensive training in international trade regulations and export-import procedures",
     issuer: "Perpetual Academy",
     date: "January 2025",
-    certificateUrl: "https://perpetualacademy.com/certificates/export-import-mastery",
+    certificateUrl: "https://drive.google.com/file/d/1VGGMFleH0C_uCpq_US-VDsUBRsodSwVI/view?usp=sharing",
   },
 ];
 
