@@ -25,19 +25,17 @@ export const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-card/95 backdrop-blur-md shadow-card"
           : "bg-transparent"
-      }`}
+        }`}
     >
-      <div className="container-custom">
+      <div className="container-custom px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className={`font-serif text-xl font-semibold transition-colors ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
+            className={`font-serif text-xl font-semibold transition-colors ${scrolled ? "text-foreground" : "text-primary-foreground"
+              }`}
           >
             Abdullah Al Rifat
           </a>
@@ -48,9 +46,8 @@ export const Navigation = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  scrolled ? "text-muted-foreground" : "text-primary-foreground/80"
-                }`}
+                className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? "text-muted-foreground" : "text-primary-foreground/80"
+                  }`}
               >
                 {link.label}
               </a>
@@ -60,9 +57,8 @@ export const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
+            className={`md:hidden p-2 ${scrolled ? "text-foreground" : "text-primary-foreground"
+              }`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
