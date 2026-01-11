@@ -1,6 +1,10 @@
 import { TrendingDown, CheckCircle, Truck, ShoppingCart } from "lucide-react";
 import caseStudySmartwatch from "@/assets/case-study-smartwatch.png";
 import caseStudyIphone from "@/assets/case-study-iphone.png";
+import caseStudyearbus from "@/assets/case-study-earbuds.jpeg";
+import caseStudyjewelry from "@/assets/case-study-jewellerry.jpeg";
+import caseStudytoys from "@/assets/case-study-toys.jpeg";
+import caseStudyusbc from "@/assets/case-study-usb-type-c.jpeg";
 
 const caseStudies = [
   {
@@ -68,7 +72,7 @@ export const CaseStudiesSection = () => {
               {/* Content */}
               <div className="p-6">
                 <p className="text-muted-foreground mb-6">{study.description}</p>
-                
+
                 <div className="space-y-3">
                   <p className="text-sm font-medium text-foreground mb-3">Results:</p>
                   {study.results.map((result, i) => (
@@ -90,16 +94,44 @@ export const CaseStudiesSection = () => {
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
-              <img 
-                src={caseStudyIphone} 
-                alt="iPhone 17 Phone Case Sourcing - OEM/ODM project for USA client with 100+ designs" 
+              <img
+                src={caseStudyIphone}
+                alt="iPhone 17 Phone Case Sourcing - OEM/ODM project for USA client with 100+ designs"
                 className="w-full h-auto object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
-              <img 
-                src={caseStudySmartwatch} 
-                alt="Smart Watch Sourcing from Guangzhou, China for Japan client" 
+              <img
+                src={caseStudySmartwatch}
+                alt="Smart Watch Sourcing from Guangzhou, China for Japan client"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
+              <img
+                src={caseStudyearbus}
+                alt="Earbuds Sourcing from Shenzhen, China for Europe client"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
+              <img
+                src={caseStudyjewelry}
+                alt="Jewelry Sourcing from Yiwu, China for USA client"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
+              <img
+                src={caseStudytoys}
+                alt="Remote Control Toys Sourcing from Dongguan, China for Australia client"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
+              <img
+                src={caseStudyusbc}
+                alt="USB Type-C Cable Sourcing from Shenzhen, China for Europe client"
                 className="w-full h-auto object-cover"
               />
             </div>
