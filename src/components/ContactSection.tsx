@@ -15,7 +15,7 @@ const contactMethods = [
     icon: Phone,
     label: "WhatsApp",
     value: "+86 177 0850 9012",
-    href: "https://wa.me/8617708509012",
+    href: "https://wa.me/+8617708509012",
     description: "Quick response on WhatsApp",
     color: "bg-green-500/10",
     iconColor: "text-green-500",
@@ -76,7 +76,7 @@ export const ContactSection = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <Button variant="accent" size="lg" asChild>
-            <a href="https://wa.me/8617708509012" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+8617708509012" target="_blank" rel="noopener noreferrer">
               <Phone size={18} />
               Message on WhatsApp
             </a>
