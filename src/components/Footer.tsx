@@ -6,7 +6,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="hero-gradient py-16">
+    <footer className="hero-gradient pt-16 pb-8">
       <div className="container-custom px-4 sm:px-6">
         {/* Main 3-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -56,10 +56,25 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar for Copyright & Back to Top */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} Abdullah Al Rifat. All rights reserved.
-          </p>
+        {/* Bottom Bar for Copyright & Back to Top */}
+        <div className="mt-6 pt-4 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col gap-1"> {/* টেক্সটগুলো নিচে নিচে রাখার জন্য flex-col */}
+            <p className="text-primary-foreground/60 text-sm">
+              © {new Date().getFullYear()} Abdullah Al Rifat. All rights reserved.
+            </p>
+
+            <p className="text-primary-foreground/40 text-xs">
+              Developed by{" "}
+              <a
+                href="https://sohayelmahmud.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors underline underline-offset-2"
+              >
+                Sohayel Mahmud
+              </a>
+            </p>
+          </div>
 
           <button
             onClick={scrollToTop}
