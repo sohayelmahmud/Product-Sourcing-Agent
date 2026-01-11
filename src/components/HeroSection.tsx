@@ -23,11 +23,11 @@ export const HeroSection = () => {
           </div>
 
           {/* Main heading */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Abdullah Al Rifat
           </h1>
 
-          <p className="text-xl md:text-2xl text-primary-foreground/80 font-light mb-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium mb-1 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Product Sourcing & Procurement Specialist
           </p>
 
@@ -36,7 +36,7 @@ export const HeroSection = () => {
           </p>
 
           {/* Expertise tags */}
-          <div className="flex flex-wrap gap-3 mb-10 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-wrap gap-3 mb-8 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             {["Product Sourcing", "Supplier Verification", "OEM/ODM", "Quality Control", "Logistics Support"].map((tag) => (
               <span
                 key={tag}
@@ -61,7 +61,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Trust indicators */}
-          <div className="grid grid-cols-3 gap-6 mt-16 pt-10 border-t border-primary-foreground/10 animate-fade-up" style={{ animationDelay: "0.6s" }}>
+          <div className="grid grid-cols-3 gap-6 mt-8 pt-6 border-t border-primary-foreground/10 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
                 <Globe className="text-accent" size={24} />
