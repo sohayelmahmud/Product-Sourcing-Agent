@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone, QrCode } from "lucide-react";
 
 const contactMethods = [
+  {
+    qrCode: "/wp.png",
+    label: "WhatsApp",
+    value: "+86 177 0850 9012",
+    href: "https://wa.me/+8617708509012",
+    description: "Quick response on WhatsApp",
+    color: "bg-green-500/10",
+    iconColor: "text-green-500",
+  },
   {
     icon: Mail,
     label: "Email",
@@ -12,16 +21,7 @@ const contactMethods = [
     iconColor: "text-red-500",
   },
   {
-    icon: Phone,
-    label: "WhatsApp",
-    value: "+86 177 0850 9012",
-    href: "https://wa.me/+8617708509012",
-    description: "Quick response on WhatsApp",
-    color: "bg-green-500/10",
-    iconColor: "text-green-500",
-  },
-  {
-    icon: MessageCircle,
+    qrCode: "/wechat.png",
     label: "WeChat",
     value: "+86 177 0850 9012",
     href: "#",
@@ -54,16 +54,24 @@ export const ContactSection = () => {
               href={method.href}
               target={method.href.startsWith("http") ? "_blank" : undefined}
               rel={method.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="group bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 text-center"
+              className="group bg-card rounded-2xl p-5 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 text-center"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`w-16 h-16 rounded-2xl ${method.color} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform`}>
-                <method.icon size={28} className={method.iconColor} />
+              <div className={`w-40 h-40 rounded-2xl ${method.color} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform overflow-hidden`}>
+                {method.qrCode ? (
+                  <img
+                    src={method.qrCode}
+                    alt={method.label}
+                    className="w-full h-full object-cover p-6"
+                  />
+                ) : (
+                  <method.icon size={48} className={method.iconColor} />
+                )}
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                 {method.label}
               </h3>
-              <p className="text-accent font-medium mb-2 break-all">
+              <p className="text-accent font-medium mb-2 text-sm">
                 {method.value}
               </p>
               <p className="text-muted-foreground text-sm">
@@ -73,7 +81,7 @@ export const ContactSection = () => {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA
         <div className="text-center mt-12">
           <Button variant="accent" size="lg" asChild>
             <a href="https://wa.me/+8617708509012" target="_blank" rel="noopener noreferrer">
@@ -81,7 +89,7 @@ export const ContactSection = () => {
               Message on WhatsApp
             </a>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
